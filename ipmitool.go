@@ -52,6 +52,8 @@ func (cl *Client) getBaseParam() []string {
 		params = append(params, "-P", cl.password)
 	}
 
+	params = append(params, "-I", "lanplus")
+
 	return params
 }
 
